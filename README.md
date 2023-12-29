@@ -1,1 +1,1 @@
-Android projects done during the course.
+Basic Android projects done during the course.
