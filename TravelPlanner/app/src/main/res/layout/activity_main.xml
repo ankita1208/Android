@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/greetingTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/hi_there"
+            android:textColor="@color/button_color"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/planTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/plan_your_next_trip"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/greetingTV"
+            app:layout_constraintStart_toStartOf="@id/greetingTV"
+            app:layout_constraintTop_toBottomOf="@id/greetingTV" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/searchET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/search_drawable"
+            android:drawableEnd="@drawable/baseline_search_24"
+            android:hint="@string/search_your_destination"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/planTV"
+            app:layout_constraintStart_toStartOf="@id/planTV"
+            app:layout_constraintTop_toBottomOf="@id/planTV" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintCL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/view_color"
+            app:layout_constraintEnd_toEndOf="@id/searchET"
+            app:layout_constraintStart_toStartOf="@id/searchET"
+            app:layout_constraintTop_toBottomOf="@id/searchET">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleRV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spanCount="2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/planBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_bg"
+            android:padding="20dp"
+            android:text="@string/plan_a_trip"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/galleryBT"
+            app:layout_constraintStart_toStartOf="@id/constraintCL"
+            app:layout_constraintTop_toBottomOf="@id/constraintCL" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/galleryBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button_bg"
+            android:padding="20dp"
+            android:text="@string/access_gallery"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/planBT"
+            app:layout_constraintEnd_toEndOf="@id/constraintCL"
+            app:layout_constraintStart_toEndOf="@id/planBT"
+            app:layout_constraintTop_toTopOf="@id/planBT" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

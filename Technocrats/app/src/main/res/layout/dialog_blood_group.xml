@@ -1,0 +1,226 @@
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/titleTV"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="20dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/dialog_botton_bg"
+            app:layout_constraintTop_toBottomOf="@id/titleTV"
+            app:layout_constraintStart_toStartOf="@id/titleTV"
+            app:layout_constraintEnd_toEndOf="@id/titleTV"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="A+"
+                android:id="@+id/aPositiveTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/aPositiveTV"
+                app:layout_constraintStart_toStartOf="@id/aPositiveTV"
+                app:layout_constraintEnd_toEndOf="@id/aPositiveTV"
+                android:background="@color/neutral_gray"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/viewV" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/viewV"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="A-"
+                android:id="@+id/aNegativeTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/aNegativeTV"
+                app:layout_constraintStart_toStartOf="@id/aPositiveTV"
+                app:layout_constraintEnd_toEndOf="@id/aPositiveTV"
+                android:background="@color/neutral_gray"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/view1V" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view1V"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="B+"
+                android:id="@+id/bPositiveTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/bPositiveTV"
+                app:layout_constraintStart_toStartOf="@id/aPositiveTV"
+                app:layout_constraintEnd_toEndOf="@id/aPositiveTV"
+                android:background="@color/neutral_gray"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/view2V" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view2V"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="B-"
+                android:id="@+id/bNegativeTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/bNegativeTV"
+                app:layout_constraintStart_toStartOf="@id/aPositiveTV"
+                app:layout_constraintEnd_toEndOf="@id/aPositiveTV"
+                android:background="@color/neutral_gray"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/view3V"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view3V"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="AB+"
+                android:id="@+id/abPositiveTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/abPositiveTV"
+                app:layout_constraintStart_toStartOf="@id/aPositiveTV"
+                app:layout_constraintEnd_toEndOf="@id/aPositiveTV"
+                android:background="@color/neutral_gray"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/view4V"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view4V"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="AB-"
+                android:id="@+id/abNegativeTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/abNegativeTV"
+                app:layout_constraintStart_toStartOf="@id/aPositiveTV"
+                app:layout_constraintEnd_toEndOf="@id/aPositiveTV"
+                android:background="@color/neutral_gray"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/view5V"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view5V"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="O+"
+                android:id="@+id/oPositiveTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/oPositiveTV"
+                app:layout_constraintStart_toStartOf="@id/aPositiveTV"
+                app:layout_constraintEnd_toEndOf="@id/aPositiveTV"
+                android:background="@color/neutral_gray"
+                android:layout_marginHorizontal="10dp"
+                android:id="@+id/view6V"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/view6V"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:padding="15dp"
+                android:text="O-"
+                android:id="@+id/oNegativeTV"
+                android:textSize="16sp"
+                android:textColor="@color/medium_neutral_gray"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

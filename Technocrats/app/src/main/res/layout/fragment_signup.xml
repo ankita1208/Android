@@ -1,0 +1,168 @@
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.technocrats.bloodlife.LoginFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/logoIV"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/overall_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nameET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:padding="10dp"
+            android:textColor="@color/medium_neutral_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoIV" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/emailET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/medium_neutral_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/nameET"
+            app:layout_constraintStart_toStartOf="@id/nameET"
+            app:layout_constraintTop_toBottomOf="@id/nameET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/phoneNumberET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/phone_number"
+            android:inputType="number"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:maxLines="15"
+            android:textColor="@color/medium_neutral_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/nameET"
+            app:layout_constraintStart_toStartOf="@id/nameET"
+            app:layout_constraintTop_toBottomOf="@id/emailET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/bloodTypeET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/blood_type"
+            android:inputType="text"
+            android:padding="10dp"
+            android:editable="true"
+            android:focusable="false"
+            android:focusedByDefault="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/medium_neutral_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/nameET"
+            app:layout_constraintStart_toStartOf="@id/nameET"
+            app:layout_constraintTop_toBottomOf="@id/phoneNumberET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/locationET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/location"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/medium_neutral_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/nameET"
+            app:layout_constraintStart_toStartOf="@id/nameET"
+            app:layout_constraintTop_toBottomOf="@id/bloodTypeET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/medium_neutral_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/emailET"
+            app:layout_constraintStart_toStartOf="@id/emailET"
+            app:layout_constraintTop_toBottomOf="@id/locationET" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/confirmPasswordET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/medium_neutral_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/emailET"
+            app:layout_constraintStart_toStartOf="@id/emailET"
+            app:layout_constraintTop_toBottomOf="@id/passwordET" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signInBT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/emailET"
+            app:layout_constraintStart_toStartOf="@id/emailET"
+            app:layout_constraintTop_toBottomOf="@id/confirmPasswordET" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/signupTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/already_have_an_account_log_in"
+            android:textColor="@color/deep_red"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signInBT"
+            app:layout_constraintVertical_bias="0.971" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

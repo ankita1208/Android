@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "996191742588",
+    "firebase_url": "https://blood-life-fd67d-default-rtdb.firebaseio.com",
+    "project_id": "blood-life-fd67d",
+    "storage_bucket": "blood-life-fd67d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996191742588:android:cbee4f709d35a5689937f9",
+        "android_client_info": {
+          "package_name": "com.example.bloodlife"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbtm2orvkmm89kOxd6rVS9Mz8PCJc2J1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996191742588:android:49d22e519669fe1c9937f9",
+        "android_client_info": {
+          "package_name": "com.technocrats.bloodlife"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbtm2orvkmm89kOxd6rVS9Mz8PCJc2J1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

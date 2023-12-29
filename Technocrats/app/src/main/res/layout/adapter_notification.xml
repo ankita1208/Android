@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/bell"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada aliquam dapibus."
+        android:textColor="@color/medium_neutral_gray"
+        android:textSize="12sp"
+        android:drawablePadding="10dp"
+        android:id="@+id/textTV"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:id="@+id/viewV"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/neutral_gray"
+        app:layout_constraintEnd_toEndOf="@id/textTV"
+        app:layout_constraintStart_toStartOf="@id/textTV"
+        app:layout_constraintTop_toBottomOf="@id/textTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

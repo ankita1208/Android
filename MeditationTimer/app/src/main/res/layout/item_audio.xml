@@ -1,0 +1,53 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/audioThumbnail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/video_player"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/audioDuration"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:id="@+id/audioTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Audio Title"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/audioThumbnail"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/audioDuration"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/audioDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Audio Duration"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            app:layout_constraintStart_toEndOf="@+id/audioThumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/audioTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/audioThumbnail"
+            android:layout_marginTop="4dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

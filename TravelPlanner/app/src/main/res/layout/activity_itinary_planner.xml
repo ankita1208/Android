@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backIV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/baseline_arrow_back_ios_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageIV"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="@drawable/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/backIV" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/from"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/label2"
+            app:layout_constraintStart_toStartOf="@id/imageIV"
+            app:layout_constraintTop_toBottomOf="@id/imageIV" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/fromET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_drawable"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/label1"
+            app:layout_constraintStart_toStartOf="@id/label1"
+            app:layout_constraintTop_toBottomOf="@id/label1" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/to"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/label1"
+            app:layout_constraintEnd_toEndOf="@id/imageIV"
+            app:layout_constraintStart_toEndOf="@id/label1"
+            app:layout_constraintTop_toTopOf="@id/label1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/toET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_drawable"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/label2"
+            app:layout_constraintStart_toStartOf="@id/label2"
+            app:layout_constraintTop_toBottomOf="@id/label2" />
+
+
+        <View
+            android:id="@+id/viewV"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@id/label2"
+            app:layout_constraintStart_toStartOf="@id/label1"
+            app:layout_constraintTop_toBottomOf="@id/fromET" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/departure"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/label2"
+            app:layout_constraintStart_toStartOf="@id/imageIV"
+            app:layout_constraintTop_toBottomOf="@id/viewV" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/departET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_drawable"
+            android:inputType="date"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/label1"
+            app:layout_constraintStart_toStartOf="@id/label1"
+            app:layout_constraintTop_toBottomOf="@id/label3" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/return_"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/label3"
+            app:layout_constraintEnd_toEndOf="@id/imageIV"
+            app:layout_constraintStart_toEndOf="@id/label3"
+            app:layout_constraintTop_toTopOf="@id/label3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/returnET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_drawable"
+            android:inputType="date"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/label4"
+            app:layout_constraintStart_toStartOf="@id/label6"
+            app:layout_constraintTop_toBottomOf="@id/label4" />
+
+
+        <View
+            android:id="@+id/viewV1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="@id/label2"
+            app:layout_constraintStart_toStartOf="@id/label1"
+            app:layout_constraintTop_toBottomOf="@id/departET" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/adults"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/label2"
+            app:layout_constraintStart_toStartOf="@id/imageIV"
+            app:layout_constraintTop_toBottomOf="@id/viewV1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/adultsET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_drawable"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/label1"
+            app:layout_constraintStart_toStartOf="@id/label1"
+            app:layout_constraintTop_toBottomOf="@id/label5" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/children"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/label5"
+            app:layout_constraintEnd_toEndOf="@id/imageIV"
+            app:layout_constraintStart_toEndOf="@id/label5"
+            app:layout_constraintTop_toTopOf="@id/label5" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/childET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/search_drawable"
+            android:inputType="number"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/label4"
+            app:layout_constraintStart_toStartOf="@id/label4"
+            app:layout_constraintTop_toBottomOf="@id/label6" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addActivityBtn"
+            style="@style/ButtonStyle"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:drawableStart="@drawable/baseline_add_24"
+            android:drawablePadding="10dp"
+            android:text="@string/add_activity"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/childET"
+            app:layout_constraintStart_toStartOf="@id/adultsET"
+            app:layout_constraintTop_toBottomOf="@+id/adultsET" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editItineraryBtn"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/book_this_trip"
+            app:layout_constraintEnd_toEndOf="@id/childET"
+            app:layout_constraintStart_toStartOf="@id/adultsET"
+            app:layout_constraintTop_toBottomOf="@+id/adultsET" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

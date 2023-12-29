@@ -1,0 +1,110 @@
+<!-- fragment_profile.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name: John Doe"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contactInfoTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Contact Info: john.doe@example.com"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/bloodTypeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Blood Type: A+"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactInfoTextView"
+        android:layout_marginTop="8dp" />
+
+    <Switch
+        android:id="@+id/bloodDonorSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Donor"
+        android:checked="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodTypeTextView"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/availabilityTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Availability: "
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodDonorSwitch"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/bloodAvailabilityET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Blood Availability"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/medium_neutral_gray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/availabilityTextView" />
+
+    <EditText
+        android:id="@+id/availabilityTimeET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Availability Time"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/medium_neutral_gray"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:focusedByDefault="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bloodAvailabilityET" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/availabilityTimeET"
+        app:layout_constraintStart_toStartOf="@id/availabilityTimeET"
+        app:layout_constraintTop_toBottomOf="@id/availabilityTimeET" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

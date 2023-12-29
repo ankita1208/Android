@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ankita_Sharma_MidTerm</string>
+    <string name="name">Ankita Sharma\n Student Id: 200553757</string>
+    <string name="hungry">Hungry ?</string>
+    <string name="notification_title">Just so you know</string>
+    <string name="notification_text">We are out of food!</string>
+    <string name="channel_id">my_channel</string>
+    <string name="channel_name">My Channel</string>
+    <string name="notification_channel">Notification Channel</string>
+</resources>
